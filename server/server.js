@@ -34,7 +34,7 @@ app.use(express.json())
 // });
 
 
-app.use('/inventory', require('./routes/api/inventory'));
+app.use('/staff', require('./routes/api/staff'));
 app.use('/locations', require('./routes/api/locations'));
 app.get('/locations', (req, res) => {
     // res.sendFile(__dirname + '/index.html');
@@ -46,7 +46,7 @@ app.get('/locations', (req, res) => {
             location: location.location,
             contact: location.contact,
             categories: location.categories,
-            inventory: location.inventory
+            staff: location.staff
         }
     }))
 });
