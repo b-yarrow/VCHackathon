@@ -1,0 +1,82 @@
+[
+    {
+        "id": "32bbed84-d450-47a6-a2f1-0648ff9c01d1",
+        "name": "Ivan Rickard Liow",
+        "picture": "business-man3",
+        "role": "Branch Manager",
+        "phone": "604.603.6889",
+        "email": "iliow@vancity.com",
+        "availability": [
+            "Monday-Thursday",
+            "9am - 4:30pm",
+            "Friday",
+            "12pm - 6pm"
+        ],
+        "branch": {
+            "name": "4th Ave Branch",
+            "address": "2233 West 4th Avenue, ",
+            "city": "Vancouver BC",
+            "postcode": "V6K 1N9"
+        },
+        "favorite": "false"
+    },
+    {
+        "id": "f702bc99-862e-4367-b424-a4682d57ecbc",
+        "name": "Mike Domanski",
+        "picture": "business-man2",
+        "role": "Loans Officer",
+        "phone": "604.609.6701",
+        "email": "mdomanski@vancity.com",
+        "availability": [
+            "Monday-Wednesday",
+            "9am - 4:30pm",
+            "Friday-Saturday",
+            "12pm - 6pm"
+        ],
+        "branch": {
+            "name": "4th Ave Branch",
+            "address": "2233 West 4th Avenue, ",
+            "city": "Vancouver BC",
+            "postcode": "V6K 1N9"
+        },
+        "favorite": "false"
+    },
+    {
+        "id": "cd56e64c-119b-46ce-b88b-55308726a57d",
+        "name": "Brett Yarrow",
+        "picture": "business-man4",
+        "role": "Investments",
+        "phone": "604.609.6803",
+        "email": "byarrow@vancity.com",
+        "availability": [
+            "Tuesday-Sunday",
+            "9am - 4:30pm"
+        ],
+        "branch": {
+            "name": "Langley Branch",
+            "address": "100 20055 Willowbrook Dr, ",
+            "city": "Langley BC",
+            "postcode": "V2Y 2T5"
+        },
+        "favorite": "false"
+    },
+    {
+        "id": "cd56e64c-119b-46ce-b88b-55308726a57d",
+        "name": "Sam Joshva",
+        "picture": "business-man5",
+        "role": "Member Care",
+        "phone": "604.609.6803",
+        "email": "samjoshva@vancity.com",
+        "availability": [
+            "Tuesday-Sunday",
+            "9am - 4:30pm"
+        ],
+        "branch": {
+            "name": "Langley Branch",
+            "address": "100 20055 Willowbrook Dr, ",
+            "city": "Langley BC",
+            "postcode": "V2Y 2T5"
+        },
+        "favorite": "false"
+    }
+]

@@ -1,0 +1,26 @@
+.cards{
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    
+
+    &__box{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 64px;
+        width: 1110px;
+    }
+}
+
+.card{
+    width: 250px !important;
+    margin-right: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+// .card-deck{
+//     display: flex !important;
+//     flex-wrap: wrap !important;
+// }

@@ -1,0 +1,221 @@
+.searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+}
+
+.searchBar__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 250px;
+  width: 100%;
+}
+
+.searchBar__titleBox {
+  margin-top: 16px;
+}
+
+.searchBar__title {
+  color: #CA1905;
+}
+
+.searchBar__spacer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+  width: 100%;
+}
+
+.searchBar__filterButtons {
+  margin-top: 32px;
+}
+
+.searchBar__filterBtn {
+  margin-right: 16px;
+  padding-left: 44px !important;
+  padding-right: 44px !important;
+}
+
+.searchBar__inputAndDropdowns {
+  margin-top: 40px;
+  padding-bottom: 32px;
+  border-bottom: solid 2px #979797;
+}
+
+.searchBar__nameInput {
+  width: 323px;
+  margin-right: 16px;
+}
+
+.searchBar__nameInputField {
+  width: 275px;
+}
+
+.searchBar__inputBox {
+  margin-right: 16px;
+}
+
+.searchBar__dropdownBtn {
+  margin-right: 16px;
+}
+
+.searchBar__dropdownBtn > button {
+  padding-left: 44px !important;
+  padding-right: 44px !important;
+}
+
+.searchBar__filterTags {
+  margin-top: 27px;
+}
+
+.searchBar__labelBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 96px;
+  border-right: solid 1px #979797;
+  padding-right: 16px;
+  margin-right: 32px;
+}
+
+.searchBar__labelBox > h2 {
+  font-size: 17px;
+}
+
+.searchBar__tagContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchBar__tagBtn {
+  color: #CA1905 !important;
+  background-color: #fff !important;
+}
+
+.breadcrumb {
+  padding-left: 0 !important;
+  background-color: #fff !important;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: .5rem;
+  color: #6c757d;
+  content: "\00BB" !important;
+}
+
+.breadcrumb-item > a {
+  color: #887e6e !important;
+}
+
+.breadcrumb-item.active > span {
+  color: #CA1905 !important;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+}
+
+.cards__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 64px;
+  width: 1110px;
+}
+
+.card {
+  width: 250px !important;
+  margin-right: 15px !important;
+  margin-bottom: 15px !important;
+}
+
+.modal__picture {
+  height: 100% !important;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.8rem;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/*# sourceMappingURL=main.css.map */
