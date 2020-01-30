@@ -35,7 +35,7 @@
 }
 
 .searchBar__titleBox {
-  margin-top: 24px;
+  margin-top: 16px;
 }
 
 .searchBar__title {
@@ -61,7 +61,7 @@
 }
 
 .searchBar__filterButtons {
-  margin-top: 48px;
+  margin-top: 32px;
 }
 
 .searchBar__filterBtn {
@@ -71,8 +71,8 @@
 }
 
 .searchBar__inputAndDropdowns {
-  margin-top: 32px;
-  padding-bottom: 49px;
+  margin-top: 40px;
+  padding-bottom: 32px;
   border-bottom: solid 2px #979797;
 }
 
@@ -151,6 +151,41 @@
   padding-right: .5rem;
   color: #6c757d;
   content: "\00BB" !important;
+}
+
+.breadcrumb-item > a {
+  color: #887e6e !important;
+}
+
+.breadcrumb-item.active > span {
+  color: #CA1905 !important;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+}
+
+.cards__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 64px;
+  width: 1110px;
+}
+
+.modal__picture {
+  height: 100% !important;
 }
 
 html,

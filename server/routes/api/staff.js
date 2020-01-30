@@ -4,15 +4,12 @@ const router = express.Router();
 
 const helper = require(__dirname + '/../../helper/helper.js');
 
-const productList = __dirname + '/../../model/products.json';
-const productListData = require(productList);
-
-const locationList = __dirname + '/../../model/locations.json';
-const locationListData = require(locationList);
+const staffList = __dirname + '/../../model/staff.json';
+const staffListData = require(staffList);
 
 router.get("/", (req, res) => {
     console.log("i am in the staff route")
-    res.json(productListData)
+    res.json(staffListData)
 })
 
 // router.get("/staff", (req, res) => {

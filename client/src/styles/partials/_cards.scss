@@ -1,0 +1,20 @@
+.cards{
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    
+
+    &__box{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 64px;
+        width: 1110px;
+    }
+}
+
+// .card-deck{
+//     display: flex !important;
+//     flex-wrap: wrap !important;
+// }

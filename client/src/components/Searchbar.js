@@ -5,7 +5,6 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { FormControl } from 'react-bootstrap'
 import InputGroup from 'react-bootstrap/InputGroup'
-// import { Form } from 'react-bootstrap'
 
 import Dropdown from 'react-bootstrap/Dropdown'
 import DropdownButton from 'react-bootstrap/DropdownButton'
@@ -35,11 +34,11 @@ export default class Searchbar extends Component {
                         <h1 className="searchBar__title">Staff Search</h1>
                     </Row>
                     <Row className="searchBar__filterButtons" noGutters="true">
-                        <Button className="searchBar__filterBtn" variant="outline-danger">ALL</Button>
-                        <Button className="searchBar__filterBtn" variant="outline-danger">Concierge</Button>
-                        <Button className="searchBar__filterBtn" variant="outline-danger">Teller</Button>
-                        <Button className="searchBar__filterBtn" variant="outline-danger">Loans Officer</Button>
-                        <Button className="searchBar__filterBtn" variant="outline-danger">Investments Officer</Button>
+                        <Button className="searchBar__filterBtn" variant="outline-danger" onClick={() => this.props.resetAllFilters(false)}> ALL</Button>
+                        <Button className="searchBar__filterBtn" variant="outline-danger" onClick={() => this.props.setFilterManager(true)}>Branch Manager</Button>
+                        <Button className="searchBar__filterBtn" variant="outline-danger" onClick={() => this.props.setFilterLoans(true)}>Loans Officer</Button>
+                        <Button className="searchBar__filterBtn" variant="outline-danger" onClick={() => this.props.setFilterInvestments(true)}>Investments</Button>
+                        <Button className="searchBar__filterBtn" variant="outline-danger" onClick={() => this.props.setFilterMemberCare(true)}>Member Care</Button>
                     </Row>
                     <Row className="searchBar__inputAndDropdowns" noGutters="true">
                         <Col className="searchBar__inputBox" sm={3}>
