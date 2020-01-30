@@ -4,6 +4,7 @@ import Locations from './Locations'
 import logo from '../logo.svg';
 import axios from "axios"
 import Searchbar from './Searchbar';
+import Cards from './Cards';
 
 const url = 'http://localhost:5000'
 
@@ -49,6 +50,7 @@ export default class Main extends Component {
                     render={props => (
                         <>
                             <Searchbar />
+                            <Cards />
                         </>
                     )}
                 />

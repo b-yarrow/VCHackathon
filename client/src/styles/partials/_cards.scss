@@ -1,0 +1,13 @@
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    
+
+    &__box{
+        margin-top: 64px;
+        width: 1110px;
+    }
+}
