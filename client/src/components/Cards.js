@@ -5,24 +5,10 @@ import CardDeck from 'react-bootstrap/CardDeck'
 import StaffCard from './tables/StaffCard'
 
 
-import ModalTest from './ModalTest'
-
-
 import React, { Component } from 'react'
 
 export default function Cards(props) {
 
-    // const {
-    //     id,
-    //     name,
-    //     picture,
-    //     role,
-    //     phone,
-    //     email,
-    //     availability,
-    //     branch,
-    //     favorite
-    // } = this.props.staffData;
 
     console.log(props)
 

@@ -21,29 +21,7 @@ import vcbanner from '../assets/pictures/vancity.png'
 
 export default class Searchbar extends Component {
     render() {
-        // var searchBar = document.getElementById('search-bar');
-        // searchBar.addEventListener('keyup', function (event) {
-        //     var text = searchBar.value.toUpperCase();
 
-        //     console.log(text)
-
-        // for (var i = 0; i < companies.length; i++) {
-        //     if (symbolList[i].indexOf(text) < 0) {
-        //         companies[i].style.display = 'None';
-        //     } else {
-        //         companies[i].style.display = 'Block';
-        //     }
-        // }
-
-        // for (var i = 0; i < companies.length; i++) {
-        //     if (compList[i].indexOf(text) < 0) {
-        //         companies[i].style.display = 'None';
-        //     } else {
-        //         companies[i].style.display = 'Block';
-        //     }
-        // }
-
-        // });
         return (
             <div className="searchBar">
                 <Row className="searchBar__header">
@@ -56,7 +34,6 @@ export default class Searchbar extends Component {
                         <Breadcrumb.Item href="#">About Vancity</Breadcrumb.Item>
                         <Breadcrumb.Item active>Staff Search</Breadcrumb.Item>
                     </Breadcrumb>
-                    {/* <Row className="searchBar__spacer" /> */}
                     <Row className="searchBar__titleBox" noGutters="true">
                         <h1 className="searchBar__title">Staff Search</h1>
                     </Row>

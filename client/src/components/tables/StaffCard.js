@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
-// import Kebab from "../../assets/icons/kebab-default.svg";
 import Card from 'react-bootstrap/Card'
 
 
@@ -14,22 +13,7 @@ export default class StaffCard extends Component {
         modalShow: false
     }
 
-    // revealRemove = () => {
-    //     console.log('handler started')
-    //     let hide = this.state.hidden
-    //     let removeBtnClassString = ''
-    //     if (hide) {
-    //         hide = !hide
-    //         removeBtnClassString = '--reveal'
-    //     } else {
-    //         hide = !hide
-    //         removeBtnClassString = ''
-    //     }
-    //     this.setState({
-    //         hidden: hide,
-    //         removeBtnClass: removeBtnClassString
-    //     })
-    // }
+
 
     setModalShow = (value) => {
         this.setState({
@@ -49,7 +33,7 @@ export default class StaffCard extends Component {
             branch,
             favorite
         } = this.props.staffData;
-        // const [modalShow, setModalShow] = React.useState(false);
+
         return (
             <>
                 <Card style={{ width: "475px" }} onClick={() => this.setModalShow(true)}>
