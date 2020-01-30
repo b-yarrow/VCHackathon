@@ -16,12 +16,39 @@ import search from '../assets/icons/search.svg';
 
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar'
 
+import vcbanner from '../assets/pictures/vancity.png'
+
 
 export default class Searchbar extends Component {
     render() {
+        // var searchBar = document.getElementById('search-bar');
+        // searchBar.addEventListener('keyup', function (event) {
+        //     var text = searchBar.value.toUpperCase();
+
+        //     console.log(text)
+
+        // for (var i = 0; i < companies.length; i++) {
+        //     if (symbolList[i].indexOf(text) < 0) {
+        //         companies[i].style.display = 'None';
+        //     } else {
+        //         companies[i].style.display = 'Block';
+        //     }
+        // }
+
+        // for (var i = 0; i < companies.length; i++) {
+        //     if (compList[i].indexOf(text) < 0) {
+        //         companies[i].style.display = 'None';
+        //     } else {
+        //         companies[i].style.display = 'Block';
+        //     }
+        // }
+
+        // });
         return (
             <div className="searchBar">
-                <Row className="searchBar__header" />
+                <Row className="searchBar__header">
+                    <Image src={vcbanner}></Image>
+                </Row>
 
 
                 <Container>
@@ -43,7 +70,7 @@ export default class Searchbar extends Component {
                     <Row className="searchBar__inputAndDropdowns" noGutters="true">
                         <Col className="searchBar__inputBox" sm={3}>
                             <InputGroup className="mb-3 searchBar__nameInput">
-                                <FormControl aria-label="Search for a Name" />
+                                <FormControl id="search-bar" aria-label="Search for a Name" />
                                 <InputGroup.Append>
                                     <InputGroup.Text><img src={search}></img></InputGroup.Text>
                                 </InputGroup.Append>
@@ -86,3 +113,5 @@ export default class Searchbar extends Component {
         )
     }
 }
+
+
