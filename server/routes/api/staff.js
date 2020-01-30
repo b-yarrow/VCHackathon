@@ -11,11 +11,11 @@ const locationList = __dirname + '/../../model/locations.json';
 const locationListData = require(locationList);
 
 router.get("/", (req, res) => {
-    console.log("i am in the inventory route")
+    console.log("i am in the staff route")
     res.json(productListData)
 })
 
-// router.get("/inventory", (req, res) => {
+// router.get("/staff", (req, res) => {
 //     res.json(productListData)
 // })
 
@@ -46,7 +46,7 @@ router.post('/', (req, res) => {
     let warehouseIndex = locationListData.findIndex(location => {
         return id === location.id
     })
-    locationListData[warehouseIndex].inventory.push(newProduct);
+    locationListData[warehouseIndex].staff.push(newProduct);
     helper.writeJSONFile(locationList, locationListData)
     productListData.push(newProduct);
     helper.writeJSONFile(productList, productListData);
@@ -57,7 +57,7 @@ router.post('/', (req, res) => {
 })
 
 //  Get product with :id
-app.get("/inventory/id/:id", (req, res) => {
+app.get("/staff/id/:id", (req, res) => {
     // res.send(req.params.id);
     const found = products.some(product => product.id === req.params.id);
     if (found) {

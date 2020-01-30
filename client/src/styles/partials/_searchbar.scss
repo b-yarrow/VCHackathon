@@ -1,0 +1,125 @@
+.searchBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+    // &__box{
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+    //     width: 1200px;
+    //     padding: 0;
+    // }
+
+    &__header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $red;
+        height: 82px;
+        // width: 1200px;
+        width: 100%;
+
+    }
+
+    &__titleBox{
+        margin-top: 24px;
+    }
+
+    &__title{
+        color: $red;
+    }
+
+    &__spacer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+        width: 100%;
+    }
+
+
+    &__filterButtons{
+        margin-top: 48px;
+        
+    }
+
+    &__filterBtn{
+        margin-right: 16px;
+        padding-left: 44px !important;
+        padding-right: 44px !important;
+    }
+
+    &__inputAndDropdowns{
+        margin-top: 32px;
+        padding-bottom: 49px;
+        border-bottom: solid 2px $grey;
+    }
+
+    &__nameInput{
+        width: 323px;
+        margin-right: 16px;
+    }
+
+    &__nameInputField{
+        width: 275px;
+    }
+
+    &__inputBox{
+        margin-right: 16px;
+    }
+
+    &__dropdownBtn{
+        margin-right: 16px;
+        & > button{
+            padding-left: 44px !important;
+            padding-right: 44px !important;
+        }
+    }
+
+    &__filterTags{
+        margin-top: 27px;    
+    }
+
+    &__labelBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 96px;
+        border-right: solid 1px $grey;
+        padding-right: 16px;
+        margin-right: 32px;
+         & > h2{
+             font-size: 17px;
+         }
+    }
+
+    &__tagContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__tagBtn{
+        color: $red !important;
+        background-color: #fff !important;
+    }
+}
+
+
+.breadcrumb{
+        padding-left: 0 !important;
+        background-color: #fff !important;
+
+    }
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: "\00BB" !important;
+}
