@@ -2,59 +2,70 @@ import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
 
+import StaffCard from './tables/StaffCard'
+
+
 import ModalTest from './ModalTest'
 
 
 import React, { Component } from 'react'
 
-export default class Cards extends Component {
+export default function Cards(props) {
 
-    render() {
-        return (
-            <div className="cards">
-                <div className="cards__box">
-                    <CardDeck>
-                        <Card style={{ width: "387px" }}>
-                            <Card.Img variant="top" src="https://via.placeholder.com/150" />
-                            <Card.Body>
-                                <Card.Title>Ivan Rickard Liow</Card.Title>
-                                <Card.Text>
-                                    Loans Officer
-                                </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <small className="text-muted">4th Ave Branch</small>
-                            </Card.Footer>
-                        </Card>
-                        <Card>
-                            <Card.Img variant="top" src="https://via.placeholder.com/150" />
-                            <Card.Body>
-                                <Card.Title>Mike Domanski</Card.Title>
-                                <Card.Text>
-                                    Wealth Manager
-                                </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <small className="text-muted">Fairview Branch</small>
-                            </Card.Footer>
-                        </Card>
-                        <Card>
-                            <Card.Img variant="top" src="https://via.placeholder.com/150" />
-                            <Card.Body>
-                                <Card.Title>Brett Yarrow</Card.Title>
-                                <Card.Text>
-                                    Senior Teller
-                        </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <small className="text-muted">Langley Branch</small>
-                            </Card.Footer>
-                        </Card>
-                    </CardDeck>
-                </div>
-                <ModalTest />
+    // const {
+    //     id,
+    //     name,
+    //     picture,
+    //     role,
+    //     phone,
+    //     email,
+    //     availability,
+    //     branch,
+    //     favorite
+    // } = this.props.staffData;
+
+    console.log(props)
+
+    const staffTable = props.staffList.map((staff, index) => {
+        if (staff.role === "Branch Manager" && props.filterBranchManager) {
+            console.log('loans filtered out')
+            return false
+
+        } else if (staff.role === "Loans Officer" && props.filterLoansOfficer) {
+            return false
+
+        }
+
+        else if (staff.role === "Investments" && props.filterInvestments) {
+            return false
+
+        }
+
+        else if (staff.role === "Member Care" && props.filterMemberCare) {
+            return false
+
+        } else {
+
+            return (
+                <StaffCard key={index}
+                    staffData={staff}
+                />
+            )
+        }
+    })
+
+
+
+    return (
+        <div className="cards">
+            <div className="cards__box">
+
+                {staffTable}
+
             </div>
+        </div>
 
-        )
-    }
+    )
 }
+
+

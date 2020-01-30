@@ -34,11 +34,11 @@ export default class Searchbar extends Component {
                         <h1 className="searchBar__title">Staff Search</h1>
                     </Row>
                     <Row className="searchBar__filterButtons" noGutters="true">
-                        <Button className="searchBar__filterBtn" variant="outline-danger">ALL</Button>
-                        <Button className="searchBar__filterBtn" variant="outline-danger">Concierge</Button>
-                        <Button className="searchBar__filterBtn" variant="outline-danger">Teller</Button>
-                        <Button className="searchBar__filterBtn" variant="outline-danger">Loans Officer</Button>
-                        <Button className="searchBar__filterBtn" variant="outline-danger">Investments Officer</Button>
+                        <Button className="searchBar__filterBtn" variant="outline-danger" onClick={() => this.props.resetAllFilters(false)}> ALL</Button>
+                        <Button className="searchBar__filterBtn" variant="outline-danger" onClick={() => this.props.setFilterManager(true)}>Branch Manager</Button>
+                        <Button className="searchBar__filterBtn" variant="outline-danger" onClick={() => this.props.setFilterLoans(true)}>Loans Officer</Button>
+                        <Button className="searchBar__filterBtn" variant="outline-danger" onClick={() => this.props.setFilterInvestments(true)}>Investments</Button>
+                        <Button className="searchBar__filterBtn" variant="outline-danger" onClick={() => this.props.setFilterMemberCare(true)}>Member Care</Button>
                     </Row>
                     <Row className="searchBar__inputAndDropdowns" noGutters="true">
                         <Col className="searchBar__inputBox" sm={3}>
